@@ -1,6 +1,8 @@
 {
   "routes": [
-    { "src": "/", "dest": "/api/index.py" },
-    { "src": "/(.*)", "dest": "/api/index.py" }
+    {
+      "src": "/(.*)",
+      "dest": "api/index.py"
+    }
   ]
 }
