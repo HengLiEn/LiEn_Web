@@ -1,8 +1,11 @@
 from flask import Flask, render_template
 import os
 
-# Point Flask to the folders relative to api/
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+print("BASE_DIR:", BASE_DIR)
+print("static folder exists:", os.path.exists(os.path.join(BASE_DIR, "static")))
+print("photo exists:", os.path.exists(os.path.join(BASE_DIR, "static", "photo_2026-04-12-19-09-57.jpg")))
 
 app = Flask(
     __name__,
@@ -10,13 +13,11 @@ app = Flask(
     static_folder=os.path.join(BASE_DIR, "static"),
 )
 
-PHOTOS = {
-    "hero": "photo_2026-04-12-19-09-57.jpg",
-    "about": "photo_2026-04-12-19-51-34.jpg"
-}
-
 @app.route("/")
 def index():
-    return render_template("index.html", photos=PHOTOS)
+    return render_template("index.html")
 
-# No handler() function — Vercel uses the `app` object directly
+if __name__ == "__main__":
+    app.run(debug=True)
+
+print("Files in static:", os.listdir(os.path.join(BASE_DIR, "static")))
