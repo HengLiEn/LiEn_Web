@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heng Li En | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Heng Li En</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#cca">Activities</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Business Analytics · Data · Digital</p>
+    <h1 class="hero-name">Heng<br/><em>Li En</em></h1>
+    <p class="hero-tagline">Final-year Business Analytics student at NTU, passionate about turning data into decisions. Currently exploring governance operations at TikTok Singapore.</p>
+    <div class="hero-pills">
+      <span class="pill">Analytics</span>
+      <span class="pill">Data visualisation</span>
+      <span class="pill">Risk management</span>
+      <span class="pill">SQL · Python</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-primary">View experience</a>
+      <a href="#contact" class="btn btn-outline">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="{{ url_for('static', filename='photos/' + photos.hero) }}" alt="Heng Li En"
+         onerror="this.src='https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=900&q=80&fit=crop'"/>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div> Scroll to explore</div>
+</section>
+
+<section id="about">
+  <div class="about-photo-wrap">
+    <img src="{{ url_for('static', filename='photos/' + photos.about) }}" alt="Li En"
+         onerror="this.src='https://images.unsplash.com/photo-1508009603885-50cf7c8dd0d5?w=600&q=80&fit=crop'"/>
+    <div class="about-photo-badge">Singapore &#127480;&#127468;</div>
+  </div>
+  <div>
+    <p class="about-label">A little about me</p>
+    <h2 class="about-title">Beyond the<br/><em>spreadsheets</em></h2>
+    <div class="about-dialog">
+      <div class="dialog-quote">"</div>
+      <p class="dialog-text">
+        Hi there — I'm Li En, a <strong>data enthusiast, accidental emcee, and cat feeder</strong> based in Singapore.<br/><br/>
+        When I'm not wrangling datasets or building dashboards, you'll find me planning my next adventure (Japan is <em>always</em> on the list), perfecting a bowl of ceremonial-grade matcha, or clocking kilometres on my bike around the neighbourhood.<br/><br/>
+        I believe the best insights come from curious minds that never stop exploring — whether that's a new dataset, a new country, or a new café. <strong>Let's build something meaningful together.</strong>
+      </p>
+    </div>
+    <div class="about-hobbies">
+      <div class="hobby-card"><span class="hobby-emoji">&#9992;&#65039;</span><span class="hobby-name">Travel</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">&#127861;</span><span class="hobby-name">Matcha</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">&#128692;</span><span class="hobby-name">Biking</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">&#128202;</span><span class="hobby-name">Data</span></div>
+    </div>
+  </div>
+</section>
+
+<div id="travel">
+  <div class="travel-img">
+    <img src="{{ url_for('static', filename='photos/' + photos.travel1) }}" alt="Travel 1"
+         onerror="this.src='https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=600&q=80&fit=crop'"/>
+    <span class="travel-label">Adventures</span>
+  </div>
+  <div class="travel-img">
+    <img src="{{ url_for('static', filename='photos/' + photos.travel2) }}" alt="Travel 2"
+         onerror="this.src='https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80&fit=crop'"/>
+    <span class="travel-label">Wanderlust</span>
+  </div>
+  <div class="travel-img">
+    <img src="{{ url_for('static', filename='photos/' + photos.travel3) }}" alt="Travel 3"
+         onerror="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80&fit=crop'"/>
+    <span class="travel-label">On the move</span>
+  </div>
+  <div class="travel-img">
+    <img src="{{ url_for('static', filename='photos/' + photos.travel4) }}" alt="Travel 4"
+         onerror="this.src='https://images.unsplash.com/photo-1508009603885-50cf7c8dd0d5?w=600&q=80&fit=crop'"/>
+    <span class="travel-label">Explore</span>
+  </div>
+  <div class="travel-overlay">&#9992; Wanderlust</div>
+</div>
+
+<section class="section reveal" id="education">
+  <p class="section-label">Academic background</p>
+  <h2 class="section-title">Education &amp; <em>qualifications</em></h2>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-school">Nanyang Technological University</div>
+      <div class="edu-degree">Bachelor of Business</div>
+      <div class="edu-period">Jul 2023 – May 2026 · Specialisation in Business Analytics</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-school">Nanyang Polytechnic</div>
+      <div class="edu-degree">Diploma in Business Intelligence &amp; Analytics</div>
+      <div class="edu-period">Apr 2020 – Mar 2023</div>
+      <ul class="edu-notes">
+        <li>Edusave Certificate of Academic Achievement 2020, 2021, 2022</li>
+        <li>Diploma Plus: Machine Data &amp; OP Intelligence — B+</li>
+        <li>Diploma Plus: Cyber Ethical Hacker Certificate — B</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-warm reveal" id="skills">
+  <p class="section-label">Technical toolkit</p>
+  <h2 class="section-title">Skills &amp; <em>technologies</em></h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title">Data &amp; analytics</div>
+      <div class="skill-tags">
+        <span class="skill-tag">SQL</span><span class="skill-tag">Python / Pandas</span>
+        <span class="skill-tag">Tableau</span><span class="skill-tag">Looker Studio</span>
+        <span class="skill-tag">Google Analytics</span><span class="skill-tag">Excel VBA</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Cloud &amp; platforms</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Azure Cloud</span><span class="skill-tag">Salesforce</span>
+        <span class="skill-tag">VWO</span><span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">Splunk</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Design &amp; web</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Figma</span><span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span><span class="skill-tag">Canva</span>
+        <span class="skill-tag">Microsoft Office</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="experience">
+  <p class="section-label">Professional journey</p>
+  <h2 class="section-title">Work <em>experience</em></h2>
+  <div class="exp-timeline">
+
+    <div class="exp-item">
+      <div class="exp-meta"><div class="exp-period">Feb – May 2026</div><div class="exp-company">TikTok SG</div></div>
+      <div class="exp-content">
+        <div class="exp-role">Governance Operation Project Intern</div>
+        <div class="exp-org">TikTok Singapore</div>
+        <ul class="exp-bullets">
+          <li>Leveraged AI tools to identify and investigate risky listings; conducted daily buyer-side monitoring across Southeast Asia.</li>
+          <li>Utilised large language models to streamline workflows, draft investigation responses, and optimise documentation processes.</li>
+          <li>Managed high-priority cases including government recalls, PR issues, and fulfilment SLA extensions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta"><div class="exp-period">May – Nov 2025</div><div class="exp-company">Great Eastern</div></div>
+      <div class="exp-content">
+        <div class="exp-role">Digital Channels Optimisation Intern</div>
+        <div class="exp-org">Great Eastern Singapore · Work-Study Internship</div>
+        <ul class="exp-bullets">
+          <li>Developed and executed automated email marketing retargeting campaigns through Salesforce; conducted UAT and pilot testing.</li>
+          <li>Built weekly performance dashboards in Looker Studio using Google Analytics data to track lead generation and sales metrics.</li>
+          <li>Collaborated on 18 A/B testing campaigns using VWO to optimise user engagement and conversion rates.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta"><div class="exp-period">Dec 2024 – Jan 2025</div><div class="exp-company">Alibaba</div></div>
+      <div class="exp-content">
+        <div class="exp-role">Risk Analyst Intern</div>
+        <div class="exp-org">Alibaba Group</div>
+        <ul class="exp-bullets">
+          <li>Proposed initiatives identifying and eliminating over 1,000 counterfeit items bearing protected logos and brands.</li>
+          <li>Used advanced data analysis techniques to discover trends and predict prevalence of counterfeit goods.</li>
+          <li>Developed SQL and Python algorithms for keyword analysis to detect potential hidden infringements.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta"><div class="exp-period">May – Aug 2024</div><div class="exp-company">Deloitte</div></div>
+      <div class="exp-content">
+        <div class="exp-role">Risk Advisory Intern</div>
+        <div class="exp-org">Deloitte Singapore · School Internship</div>
+        <ul class="exp-bullets">
+          <li>Developed comprehensive working papers on Third-Party Risk Management, detailing risk assessment and mitigation strategies.</li>
+          <li>Performed on-site compliance assessment of client companies against MAS Guidelines on Outsourcing.</li>
+          <li>Conducted cross-country research on TPRM practices, identifying key differences in regulations and compliance requirements.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta"><div class="exp-period">May – Jul 2023</div><div class="exp-company">KTPH</div></div>
+      <div class="exp-content">
+        <div class="exp-role">HR Shared Services Assistant</div>
+        <div class="exp-org">Khoo Teck Puat Hospital</div>
+        <ul class="exp-bullets">
+          <li>Implemented issuance of personalised name tags with 2D barcodes for seamless identification and automated security access.</li>
+          <li>Handled 100+ employee records sent to external vendors; managed meticulous filing across staff family groups.</li>
+          <li>Verified accuracy and credibility of employees' educational backgrounds with thoroughness and professionalism.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta"><div class="exp-period">Mar – Aug 2022</div><div class="exp-company">PwC</div></div>
+      <div class="exp-content">
+        <div class="exp-role">Data Analyst Intern</div>
+        <div class="exp-org">PricewaterhouseCoopers Singapore · School Internship</div>
+        <ul class="exp-bullets">
+          <li>Achieved a 30% reduction in data cleaning and conversion time through automation and workflow optimisation.</li>
+          <li>Improved data migration from on-premises SQL to Azure Cloud, scripting stored procedures, views, and tables.</li>
+          <li>Reduced data entry errors by 20% through data validation and automation across the Singapore Datamart project.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials">
+  <p class="section-label">What others say</p>
+  <h2 class="section-title" style="color:var(--white)">Words of <em style="color:#b8d89e">commendation</em></h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p class="testi-text">Her support in running UAT and pilot testing for our automated retargeting journey played a crucial role in salvaging customer drop-offs. Her attention to detail and analytical mindset ensured that stakeholders had timely and accurate data to guide decision-making. She has shown great initiative, adaptability, and a collaborative spirit throughout her time with us.</p>
+      <div class="testi-author">
+        <div class="testi-name">Lucas Tan</div>
+        <div class="testi-role">VP – Performance Marketing &amp; Content Creation</div>
+        <div class="testi-company">Great Eastern Life Singapore</div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <p class="testi-text">Li En has the potential to excel with the keen interest she has as a data analyst, as she possesses the right skills whilst working here. This project sufficiently highlighted her resilient and trustworthy qualities to ensure that the deadline is met. We are confident she will continue to give her best to all future endeavours.</p>
+      <div class="testi-author">
+        <div class="testi-name">Nagendra Puppala</div>
+        <div class="testi-role">Manager, Global Technology Support</div>
+        <div class="testi-company">PricewaterhouseCoopers Singapore</div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <p class="testi-text">Her meticulous attention to detail and organisational skills ensured that our records were well-maintained and easily accessible. This level of efficiency greatly contributed to the overall effectiveness of our department. She has been an asset to our organisation, and her commitment to excellence has positively impacted our team.</p>
+      <div class="testi-author">
+        <div class="testi-name">Jeff Hee</div>
+        <div class="testi-role">Human Resource Assistant Director</div>
+        <div class="testi-company">Khoo Teck Puat Hospital</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-warm reveal" id="certifications">
+  <p class="section-label">Credentials</p>
+  <h2 class="section-title">Certifications &amp; <em>awards</em></h2>
+  <div class="cert-grid">
+    <div class="cert-item"><span class="cert-icon">&#128202;</span><div><div class="cert-name">Google Analytics Certification</div><div class="cert-period">Jul 2025 – Jul 2026 · Skillshop</div></div></div>
+    <div class="cert-item"><span class="cert-icon">&#9729;&#65039;</span><div><div class="cert-name">Microsoft Certified: Azure Data Fundamentals</div><div class="cert-period">March 2022 – Present</div></div></div>
+    <div class="cert-item"><span class="cert-icon">&#128269;</span><div><div class="cert-name">Splunk Core Certified Power User</div><div class="cert-period">October 2021 – October 2024</div></div></div>
+    <div class="cert-item"><span class="cert-icon">&#128274;</span><div><div class="cert-name">Cyber Ethical Hacker Certificate</div><div class="cert-period">April 2021 – April 2024</div></div></div>
+    <div class="cert-item"><span class="cert-icon">&#129352;</span><div><div class="cert-name">National Youth Achievement Award</div><div class="cert-period">Silver Award · 2017</div></div></div>
+  </div>
+</section>
+
+<section class="section reveal" id="cca">
+  <p class="section-label">Leadership &amp; activities</p>
+  <h2 class="section-title">Co-curricular <em>activities</em></h2>
+  <div class="cca-grid">
+    <div class="cca-card">
+      <div class="cca-org">NTU Cat Management Club</div>
+      <div class="cca-role">Honorary General Secretary</div>
+      <div class="cca-period">Sep 2024 – Sep 2025</div>
+      <p class="cca-desc">Managed administrative functions; allocated ECA points to 200+ feeders, scheduled meetings, and maintained accurate records of proceedings.</p>
+    </div>
+    <div class="cca-card">
+      <div class="cca-org">NTU Accounting and Business Club</div>
+      <div class="cca-role">Events Sub-Committee</div>
+      <div class="cca-period">Oct 2023 – Aug 2024</div>
+      <p class="cca-desc">Supported NTU Inter School Games 2023/2024 and NBS Day 2024, providing day-to-day operations for up to 1,500 students.</p>
+    </div>
+    <div class="cca-card">
+      <div class="cca-org">NYP Emcee Club</div>
+      <div class="cca-role">Sub-Committee Member</div>
+      <div class="cca-period">Jul 2020 – May 2022</div>
+      <p class="cca-desc">Hosted the 8th Asia Arts Festival, the Launch of Centre for IT Innovation, and NYP Open House events — garnering up to 700 viewers.</p>
+    </div>
+    <div class="cca-card">
+      <div class="cca-org">NYP Library Champion</div>
+      <div class="cca-role">President</div>
+      <div class="cca-period">Apr 2021 – Mar 2022</div>
+      <p class="cca-desc">Initiated intercultural events; elected to NYP Student Leaders' Summit and served as Executive Committee member.</p>
+    </div>
+    <div class="cca-card">
+      <div class="cca-org">NYP School of IT Club</div>
+      <div class="cca-role">Honorary Secretary</div>
+      <div class="cca-period">Apr 2020 – Mar 2022</div>
+      <p class="cca-desc">Represented SIT Club as emcee for events with up to 1,200 participants; oversaw Freshman Orientation 2021 and SIT DAY 2022.</p>
+    </div>
+    <div class="cca-card">
+      <div class="cca-org">NTU Cats Management Network</div>
+      <div class="cca-role">Community Volunteer</div>
+      <div class="cca-period">Aug 2023 – Sep 2025</div>
+      <p class="cca-desc">Executed daily feeding schedules for two semesters, ensuring the nutritional needs of the NTU campus cat community were met with care.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div>
+    <div class="footer-title">Let's <em>connect</em><br/>and create.</div>
+    <p class="footer-sub">Open to full-time roles from June 2026 onwards.<br/>Always up for a matcha chat &#9749;</p>
+  </div>
+  <div class="contact-items">
+    <div class="contact-item"><div class="contact-icon">&#128231;</div><a href="mailto:henglien@gmail.com">henglien@gmail.com</a></div>
+    <div class="contact-item"><div class="contact-icon">&#128241;</div><span>+65 9759 3355</span></div>
+    <div class="contact-item"><div class="contact-icon">&#128205;</div><span>Singapore &#127480;&#127468;</span></div>
+    <div class="contact-item"><div class="contact-icon">&#127891;</div><span>Nanyang Technological University · May 2026</span></div>
+  </div>
+  <div class="footer-bottom">&#169; 2026 Heng Li En &nbsp;·&nbsp; Crafted with &#127861; and good data</div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  const sections = document.querySelectorAll('section[id], footer[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const secObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.style.color = '');
+        const a = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+        if (a) a.style.color = 'var(--matcha)';
+      }
+    });
+  }, { rootMargin: '-40% 0px -40% 0px' });
+  sections.forEach(s => secObs.observe(s));
+</script>
+</body>
+</html>
