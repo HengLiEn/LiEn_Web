@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="/static/{{ photos.hero }}" alt="Heng Li En"
+    <img src="{{ url_for('static', filename=photos.hero) }}" alt="Heng Li En"
          onerror="this.src='https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=900&q=80&fit=crop'"/>
   </div>
   <div class="hero-scroll"><div class="scroll-line"></div> Scroll to explore</div>
@@ -46,7 +46,7 @@
 <!-- ── About ── -->
 <section id="about">
   <div class="about-photo-wrap">
-    <img src="/static/{{ photos.about }}" alt="Li En"
+    <img src="{{ url_for('static', filename=photos.about) }}" alt="Li En"
          onerror="this.src='https://images.unsplash.com/photo-1508009603885-50cf7c8dd0d5?w=600&q=80&fit=crop'"/>
     <div class="about-photo-badge">me &#127480;&#127468;</div>
   </div>
